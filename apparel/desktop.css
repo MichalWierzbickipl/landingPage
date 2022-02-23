@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("images/bg-pattern-desktop.svg") center/cover no-repeat;
+  margin: 0;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  height: 100%;
+}
+
+.main-section {
+  padding: 0px 150px;
+  align-items: center;
+  text-align: left;
+  max-width: 800px;
+  margin-right: auto;
+}
+
+.logo-container {
+  margin-top: 50px;
+}
+
+.mobile-img {
+  display: none;
+}
+
+section {
+  margin-top: 120px;
+  font-family: "Josefin Sans";
+}
+
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  font-weight: 300;
+  color: #ec7a7a;
+}
+
+h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  margin: 0px;
+  letter-spacing: 8px;
+}
+
+button {
+  background: rgb(154, 114, 101);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 186, 163, 1) 31%,
+    rgba(255, 161, 129, 1) 59%
+  );
+  border: none;
+  padding: 15px 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 35px;
+  width: 125px;
+  box-shadow: -5px 0px 15px grey;
+  z-index: 1;
+}
+
+button:hover {
+  background: rgb(255, 186, 163);
+  background: linear-gradient(
+    90deg,
+    rgb(252, 156, 125) 31%,
+    rgb(255, 110, 61) 59%
+  );
+}
+
+button:active {
+  background: rgb(255, 186, 163);
+  background: linear-gradient(
+    90deg,
+    rgb(231, 163, 140) 31%,
+    rgb(211, 124, 95) 59%
+  );
+}
+
+p {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: hsl(0, 100%, 90%);
+  text-align: left;
+  font-family: Josefin Sans;
+  margin: 7px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-spacing: 3px;
+  line-height: 35px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-family: "Josefin Sans";
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+footer a {
+  text-decoration: none;
+  height: 2vh;
+}
+
+#email {
+  display: flex;
+  justify-content: space-between;
+  border-color: #dd7878;
+  border-radius: 35px;
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  width: 700px;
+  height: 70px;
+}
+
+input {
+  position: relative;
+  flex-grow: 1;
+  border-radius: 35px;
+  border: 0;
+  outline-width: 0;
+  font-family: "Josefin Sans";
+  color: #252323;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 30px;
+  background-color: transparent;
+}
+
+input::placeholder {
+  color: hsl(0, 100%, 90%);
+}
+
+input[type="email"]:invalid {
+  border: 1px solid red;
+}
+
+.error-message {
+  display: none;
+}
+
+form:invalid input:not(:focus) ~ .error-message {
+  display: block;
+  position: absolute;
+  top: 640px;
+  font-family: "Josefin Sans";
+  color: red;
+  font-weight: bold;
+}
+
+.icon-error {
+  display: none;
+}
+
+form:invalid input:not(:focus) ~ .icon-error {
+  display: block;
+  position: absolute;
+  top: 593px;
+  left: 557px;
+  height: 45px;
+}
+
+/* .mobile-img {
+  display: none;
+} */
+
+.img-section img {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  object-fit: cover;
+}
+
+.attribution {
+  font-size: 16px;
+  text-align: center;
+  color: hsl(228, 45%, 44%);
+}
